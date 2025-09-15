@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./CorporateInfo.module.css";
+import styles from "./corporateInfo.module.css";
 import { motion } from "framer-motion";
 import { FaUsers, FaRegFileAlt, FaHandshake, FaBalanceScale, FaBuilding, FaRegChartBar } from "react-icons/fa";
 
