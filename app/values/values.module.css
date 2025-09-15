@@ -1,0 +1,122 @@
+.valuesSection {
+  background-color: #f4f8ff; /* soft blue background */
+  padding: 3rem 8%;
+}
+
+.valuesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.valuesHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #0a2a66;
+  animation: fadeInDown 1s ease forwards;
+}
+
+/* Grid */
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.valueCard {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.valueCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon */
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a2a66;
+  color: #fff;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+.valueCard h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: #0a2a66;
+}
+
+.tagline {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .valuesHeading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .valueCard {
+    padding: 1.5rem;
+  }
+
+  .iconWrapper {
+    width: 55px;
+    height: 55px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}

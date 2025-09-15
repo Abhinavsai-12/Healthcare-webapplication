@@ -1,0 +1,96 @@
+/* Whole section with padding around */
+.mission-section {
+  padding: 3rem 5%;       /* space around the section */
+  background: #fff;
+}
+
+/* Flexbox wrapper */
+.mission-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  flex-wrap: wrap;
+  gap: 2px; 
+}
+
+/* Left content box */
+.mission-content {
+  flex: 1;
+  background-color: #2e2f77;
+  color: #fff;
+  padding: 2rem;
+  /* border-radius: 12px; */
+  max-width: 550px;
+  height: auto;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.mission-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mission-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.mission-btn {
+  background: #009688;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mission-btn:hover {
+  background: #00796b;
+  transform: translateY(-3px);
+}
+
+/* Right image box */
+.mission-image {
+  flex: 1;
+  text-align: center;
+  max-width: 300px;  /* keep image smaller */
+}
+
+.mission-img {
+  /* border-radius: 12px; */
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-content {
+    max-width: 100%;
+  }
+
+  .mission-image {
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+}

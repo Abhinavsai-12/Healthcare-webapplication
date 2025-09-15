@@ -1,0 +1,166 @@
+.container {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+/* Section Titles & Text */
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 1000px;
+  color: #444;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutSection {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Story Section */
+.storySection {
+  padding: 60px 20px;
+}
+
+.storyContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.storyImage {
+  flex: 1;
+  max-width: 450px;
+  border-radius: 12px;
+  height: 320px;
+}
+
+.storyText {
+  flex: 2;
+  min-width: 300px;
+}
+
+.storyText h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.storyText p {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* Mission & Vision Section */
+.missionVisionSection {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 60px 20px;
+}
+
+.mission,
+.vision {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.textBox {
+  flex: 1;
+  min-width: 320px;
+}
+
+.textBox h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.textBox p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.animatedBorder {
+  width: 4px;
+  height: 50px;
+  background: #000;
+  margin-bottom: 20px;
+  animation: borderGrow 1.5s ease-in-out forwards;
+}
+
+@keyframes borderGrow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 50px;
+  }
+}
+
+.missionImage,
+.visionImage {
+  flex: 1;
+  border-radius: 12px;
+  max-width: 650px;
+  width: 100%;
+}
+
+/* Directors Section */
+.directorsSection {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.directorsSection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.directorsSection p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.directorsImage {
+  margin-top: 30px;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .storyContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission,
+  .vision {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .animatedBorder {
+    margin: 0 auto 20px;
+  }
+}

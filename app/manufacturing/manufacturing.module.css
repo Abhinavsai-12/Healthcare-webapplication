@@ -1,0 +1,90 @@
+/* Container and layout */
+.container {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0545;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.imageWrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.fullWidthImage {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2rem 1rem 1rem;
+  color: white;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem 3rem;
+}
+
+/* Grid items */
+.item {
+  position: relative;
+  padding-left: 2.2rem;
+  animation: fadeIn 1s ease-in-out both;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.item p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.8rem;
+    padding: 1.5rem 1rem 0.5rem;
+  }
+
+  .grid {
+    padding: 0 1rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .item p {
+    font-size: 1rem;
+  }
+}
